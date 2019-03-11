@@ -13,23 +13,23 @@ NSString * const _refreshControl = @"refreshControl";
 @implementation UIScrollView (JFRefresh)
 
 - (void)addHeaderWithAction:(void (^)(NSInteger))action{
-    [self.refreshControl removeFromScrollView];
+    [self.jf_refreshControl removeFromScrollView];
     
-    self.refreshControl = [[JFRefreshControl alloc]initWithScrollView:self];
-    self.refreshControl.actionOfIndex = action;
+    self.jf_refreshControl = [[JFRefreshControl alloc]initWithScrollView:self];
+    self.jf_refreshControl.actionOfIndex = action;
 }
 
 - (void)addHeaderWithAction:(void (^)(NSInteger))action customControl:(void (^)(JFRefreshControl *))opration{
     [self addHeaderWithAction:action];
-    opration(self.refreshControl);
+    opration(self.jf_refreshControl);
 }
 
-- (JFRefreshControl *)refreshControl{
+- (JFRefreshControl *)jf_refreshControl{
     return (JFRefreshControl *)objc_getAssociatedObject(self, &_refreshControl);
 }
 
-- (void)setRefreshControl:(JFRefreshControl *)refreshControl{
-    objc_setAssociatedObject(self, &_refreshControl, refreshControl, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+- (void)setJf_refreshControl:(JFRefreshControl *)jf_refreshControl{
+    objc_setAssociatedObject(self, &_refreshControl, jf_refreshControl, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 @end

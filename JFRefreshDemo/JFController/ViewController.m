@@ -55,7 +55,7 @@ static NSString *cellIndetifier = @"JFTableViewCellIdentifier";
     //头视图基准高度 default == 64
     control.baseHeight = 64;
     //视图开始位置 default == 0, 如果需要从TableView顶部开始，则设置为tableView Origin.Y
-    control.show_MIN_Y = 20;
+    control.show_MIN_Y = 0;
     //从矩阵一边的直线到贝塞尔弧线开始变化的值 default == 15
     control.startLocation_Y = 20;
     //顶部变换图形的阴影透明度值 default == 0, value 0 - 1

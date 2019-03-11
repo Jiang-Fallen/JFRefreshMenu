@@ -13,12 +13,12 @@
 		EE73860E1C8FF4F5006F2BE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE73860D1C8FF4F5006F2BE6 /* Assets.xcassets */; };
 		EE7386111C8FF4F5006F2BE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE73860F1C8FF4F5006F2BE6 /* LaunchScreen.storyboard */; };
 		EE73861B1C8FF52E006F2BE6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE73861A1C8FF52E006F2BE6 /* ViewController.m */; };
-		EE73862C1C8FF547006F2BE6 /* JFRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7386201C8FF547006F2BE6 /* JFRefreshControl.m */; };
 		EE73862D1C8FF547006F2BE6 /* JFRefreshOpration.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7386221C8FF547006F2BE6 /* JFRefreshOpration.m */; };
-		EE73862E1C8FF547006F2BE6 /* UIScrollView+JFRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7386241C8FF547006F2BE6 /* UIScrollView+JFRefresh.m */; };
 		EE73862F1C8FF547006F2BE6 /* UIView+JFFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7386261C8FF547006F2BE6 /* UIView+JFFrame.m */; };
 		EE7386301C8FF547006F2BE6 /* JFTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7386291C8FF547006F2BE6 /* JFTableViewCell.m */; };
 		EE7386311C8FF547006F2BE6 /* JFTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE73862A1C8FF547006F2BE6 /* JFTableViewCell.xib */; };
+		EE8E4A132235FF3A00A14E89 /* UIScrollView+JFRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7386241C8FF547006F2BE6 /* UIScrollView+JFRefresh.m */; };
+		EE8E4A142235FF6400A14E89 /* JFRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7386201C8FF547006F2BE6 /* JFRefreshControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +43,7 @@
 		EE7386281C8FF547006F2BE6 /* JFTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTableViewCell.h; sourceTree = "<group>"; };
 		EE7386291C8FF547006F2BE6 /* JFTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTableViewCell.m; sourceTree = "<group>"; };
 		EE73862A1C8FF547006F2BE6 /* JFTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFTableViewCell.xib; sourceTree = "<group>"; };
+		EE8E4A15223600F300A14E89 /* JFRefreshConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFRefreshConfig.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +118,7 @@
 				EE7386241C8FF547006F2BE6 /* UIScrollView+JFRefresh.m */,
 				EE7386251C8FF547006F2BE6 /* UIView+JFFrame.h */,
 				EE7386261C8FF547006F2BE6 /* UIView+JFFrame.m */,
+				EE8E4A15223600F300A14E89 /* JFRefreshConfig.h */,
 			);
 			path = JFRefresh;
 			sourceTree = "<group>";
@@ -162,6 +164,7 @@
 				TargetAttributes = {
 					EE7385FD1C8FF4F5006F2BE6 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = QFCY5UMHA5;
 					};
 				};
 			};
@@ -202,13 +205,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE8E4A142235FF6400A14E89 /* JFRefreshControl.m in Sources */,
+				EE8E4A132235FF3A00A14E89 /* UIScrollView+JFRefresh.m in Sources */,
 				EE7386301C8FF547006F2BE6 /* JFTableViewCell.m in Sources */,
-				EE73862C1C8FF547006F2BE6 /* JFRefreshControl.m in Sources */,
 				EE73862D1C8FF547006F2BE6 /* JFRefreshOpration.m in Sources */,
 				EE73862F1C8FF547006F2BE6 /* UIView+JFFrame.m in Sources */,
 				EE7386061C8FF4F5006F2BE6 /* AppDelegate.m in Sources */,
 				EE73861B1C8FF52E006F2BE6 /* ViewController.m in Sources */,
-				EE73862E1C8FF547006F2BE6 /* UIScrollView+JFRefresh.m in Sources */,
 				EE7386031C8FF4F5006F2BE6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +324,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QFCY5UMHA5;
 				INFOPLIST_FILE = JFRefreshDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -333,6 +337,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QFCY5UMHA5;
 				INFOPLIST_FILE = JFRefreshDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -360,6 +365,7 @@
 				EE7386171C8FF4F5006F2BE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
